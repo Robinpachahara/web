@@ -42,7 +42,7 @@ const siteConfig = {
         label: 'Contact',
       },
       {
-        href: 'https://twitter.com/saas_js',
+        href: 'https://app.chipmonkey.cloud',
         label: <FaDiscord size="14" />,
       },
       {
