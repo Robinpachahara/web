@@ -57,11 +57,12 @@ export const Pricing: React.FC<PricingProps> = (props) => {
                   : {}
               }
             >
-              <PricingFeatures>
-                {plan.features.map((feature, i) =>
-                  feature ? <PricingFeature key={i} {...feature} /> : <br />
-                )}
-              </PricingFeatures>
+                   <PricingFeatures>
+               {plan.features.map((feature, index: number) =>
+              feature ? <PricingFeature key={index} {...feature} /> : <br key={index} />
+                 )}
+               </PricingFeatures>
+
               <ButtonLink colorScheme="primary" {...plan.action}>
                 {plan.action.label || 'Sign Up'}
               </ButtonLink>
