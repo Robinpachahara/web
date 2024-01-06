@@ -1,9 +1,10 @@
 import { NextSeoProps } from 'next-seo';
 import { FaDiscord, FaPhone } from 'react-icons/fa';
 import { FiCheck } from 'react-icons/fi';
-
+import { Logo } from './logo'
 const siteConfig = {
   // Replace with the correct path to your image
+  logo: Logo,
   seo: {
     title: 'ChipMonkey',
   } as NextSeoProps,
