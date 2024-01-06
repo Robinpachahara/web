@@ -82,6 +82,8 @@ const siteConfig = {
       },
     ],
   },
+    // Add the logo property
+  logo: '/public/static/favicons/chipMonkey_noBg.png',
 };
 
 export default siteConfig;
