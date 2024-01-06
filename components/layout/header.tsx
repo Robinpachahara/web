@@ -6,7 +6,7 @@ import {
   Flex,
   useColorModeValue,
   Image,
-  Text, // Import Text from Chakra UI
+  Text,
 } from '@chakra-ui/react';
 import Navigation from './navigation';
 import { useScroll } from 'framer-motion';
@@ -52,7 +52,7 @@ export const Header = (props: HeaderProps) => {
               objectFit="cover"
               mr="2" // Adjust margin as needed
             />
-            <Text fontSize="20px" fontWeight="bold" >
+            <Text fontSize={['16px', '20px', '24px', '28px']} fontWeight="bold">
               ChipMonkey.cloud🚀
             </Text>
           </Flex>
