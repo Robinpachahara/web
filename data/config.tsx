@@ -1,14 +1,11 @@
-import { Button } from '@chakra-ui/react';
-import { Link } from '@saas-ui/react';
 import { NextSeoProps } from 'next-seo';
-import { FaDiscord, FaGithub, FaPhone, FaTwitter } from 'react-icons/fa';
+import { FaDiscord, FaPhone } from 'react-icons/fa';
 import { FiCheck } from 'react-icons/fi';
-import Image from 'next/image';
+
 const siteConfig = {
-// Replace with the correct path to your image
+  // Replace with the correct path to your image
   seo: {
     title: 'ChipMonkey',
-    
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
@@ -38,7 +35,6 @@ const siteConfig = {
     ],
   },
   footer: {
-
     links: [
       {
         href: 'mailto:contact@chipmonkey.cloud',
@@ -46,11 +42,11 @@ const siteConfig = {
       },
       {
         href: 'https://twitter.com/saas_js',
-        label: < FaDiscord size="14" />,
+        label: <FaDiscord size="14" />,
       },
       {
-        href:"tel:+91 7454011577",
-        label: < FaPhone size="14" />,
+        href: 'tel:+91 7454011577',
+        label: <FaPhone size="14" />,
       },
     ],
   },
@@ -65,25 +61,24 @@ const siteConfig = {
       {
         icon: FiCheck,
         title: 'Themable',
-        description:
-          'Infuse creativity into your AI journey! Personalize with Themable customizable themes, tailoring automation for your unique brand experience.',
+        description: 'Infuse creativity into your AI journey! Personalize with Themable customizable themes, tailoring automation for your unique brand experience.',
       },
       {
         icon: FiCheck,
         title: 'Whatsapp',
-        description:
-          'Connect like never before with ChipMonkey WhatsApp integration. Redefine communication with user-friendly chats, bulk messaging, and audience engagement.',
+        description: 'Connect like never before with ChipMonkey WhatsApp integration. Redefine communication with user-friendly chats, bulk messaging, and audience engagement.',
       },
       {
         icon: FiCheck,
         title: 'Aichat',
-        description:
-          'Unlock insights effortlessly with Aichat friendly AI chat. Transform conversations into gold with our intuitive interface.',
+        description: 'Unlock insights effortlessly with Aichat friendly AI chat. Transform conversations into gold with our intuitive interface.',
       },
     ],
   },
-    // Add the logo property
-  logo: '/public/static/favicons/chipMonkey_noBg.png',
+  // Add the logo property
+// Add the logo property
+
+
 };
 
 export default siteConfig;
