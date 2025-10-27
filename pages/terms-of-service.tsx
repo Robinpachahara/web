@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+
 import { Box, Heading, Text, Link, List, ListItem, VStack } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import { Section } from 'components/section'
@@ -157,3 +158,4 @@ const TermsOfService: NextPage = () => {
 }
 
 export default TermsOfService
+
