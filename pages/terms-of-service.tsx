@@ -1,6 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-
-import { Box, Heading, Text, Link, List, ListItem, VStack } from '@chakra-ui/react'
+import { Box, Heading, Text, Link, List, ListItem } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import { Section } from 'components/section'
 import { PageTransition } from 'components/motion/page-transition'
@@ -20,28 +18,21 @@ const TermsOfService: NextPage = () => {
           </Text>
 
           <Text mb={6}>
-            Welcome to <b>HoxFitness.in</b>. These Terms of Service (&quot;Terms&quot;) govern your access and
-            use of our gym management software platform, including all related tools, dashboards,
-            and communication services. By using HoxFitness.in, you agree to these Terms.
+            Welcome to <b>HoxFitness.in</b>. These Terms of Service (&quot;Terms&quot;) govern your
+            access and use of our gym management software platform, including all related tools,
+            dashboards, and communication services. By using HoxFitness.in, you agree to these
+            Terms.
           </Text>
 
           {/* 1. Use of Service */}
           <Heading as="h2" size="md" mt={8} mb={3}>
             1. Use of the Service
           </Heading>
-          <VStack align="start" spacing={3}>
-            <List styleType="disc" pl={5}>
-              <ListItem>
-                HoxFitness provides tools for gym owners to manage members, payments, and communication.
-              </ListItem>
-              <ListItem>
-                You agree to use the service only for lawful gym or fitness business purposes.
-              </ListItem>
-              <ListItem>
-                Unauthorized use, data scraping, or reverse engineering is strictly prohibited.
-              </ListItem>
-            </List>
-          </VStack>
+          <List styleType="disc" pl={5}>
+            <ListItem>HoxFitness provides tools for gym owners to manage members, payments, and communication.</ListItem>
+            <ListItem>You agree to use the service only for lawful gym or fitness business purposes.</ListItem>
+            <ListItem>Unauthorized use, data scraping, or reverse engineering is strictly prohibited.</ListItem>
+          </List>
 
           {/* 2. Account Responsibilities */}
           <Heading as="h2" size="md" mt={8} mb={3}>
@@ -53,7 +44,7 @@ const TermsOfService: NextPage = () => {
             <ListItem>Notify us immediately if you suspect any unauthorized activity.</ListItem>
           </List>
 
-          {/* 3. Payments & Subscriptions */}
+          {/* 3. Payment & Subscriptions */}
           <Heading as="h2" size="md" mt={8} mb={3}>
             3. Payments &amp; Subscriptions
           </Heading>
@@ -76,9 +67,7 @@ const TermsOfService: NextPage = () => {
             <ListItem>Browser Push Notifications (OneSignal)</ListItem>
             <ListItem>Email alerts from <b>support@hoxfitness.in</b></ListItem>
           </List>
-          <Text mt={2}>
-            You may opt out of these communications at any time from your dashboard settings.
-          </Text>
+          <Text mt={2}>You may opt out of these communications at any time from your dashboard settings.</Text>
 
           {/* 5. Data Privacy */}
           <Heading as="h2" size="md" mt={8} mb={3}>
@@ -98,12 +87,10 @@ const TermsOfService: NextPage = () => {
           </Heading>
           <List styleType="disc" pl={5}>
             <ListItem>We may suspend or terminate accounts found violating these Terms.</ListItem>
-            <ListItem>
-              Users may request account deletion by emailing <b>support@hoxfitness.in</b>.
-            </ListItem>
+            <ListItem>Users may request account deletion by emailing <b>support@hoxfitness.in</b>.</ListItem>
           </List>
 
-          {/* 7. Limitation of Liability */}
+          {/* 7. Limitation */}
           <Heading as="h2" size="md" mt={8} mb={3}>
             7. Limitation of Liability
           </Heading>
@@ -137,7 +124,7 @@ const TermsOfService: NextPage = () => {
             .
           </Text>
 
-          {/* Meta Compliance Note */}
+          {/* Meta Compliance */}
           <Heading as="h2" size="md" mt={8} mb={3}>
             Meta Verification Declaration
           </Heading>
@@ -158,5 +145,3 @@ const TermsOfService: NextPage = () => {
 }
 
 export default TermsOfService
-
-
