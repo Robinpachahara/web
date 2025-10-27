@@ -20,7 +20,7 @@ const TermsOfService: NextPage = () => {
           </Text>
 
           <Text mb={6}>
-            Welcome to <b>HoxFitness.in</b>. These Terms of Service (“Terms”) govern your access and
+            Welcome to <b>HoxFitness.in</b>. These Terms of Service (&quot;Terms&quot;) govern your access and
             use of our gym management software platform, including all related tools, dashboards,
             and communication services. By using HoxFitness.in, you agree to these Terms.
           </Text>
@@ -158,4 +158,5 @@ const TermsOfService: NextPage = () => {
 }
 
 export default TermsOfService
+
 
