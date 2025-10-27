@@ -1,4 +1,5 @@
-import { Box, Heading, Text, Link, List, ListItem } from '@chakra-ui/react'
+/* eslint-disable react/no-unescaped-entities */
+import { Box, Heading, Text, Link, List, ListItem, VStack } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import { Section } from 'components/section'
 import { PageTransition } from 'components/motion/page-transition'
@@ -18,25 +19,28 @@ const TermsOfService: NextPage = () => {
           </Text>
 
           <Text mb={6}>
-            Welcome to <b>HoxFitness.in</b>. These Terms of Service (&quot;Terms&quot;) govern your
-            access and use of our gym management software platform, including all related tools,
-            dashboards, and communication services. By using HoxFitness.in, you agree to these
-            Terms.
+            Welcome to <b>HoxFitness.in</b>. These Terms of Service (“Terms”) govern your access and
+            use of our gym management software platform, including all related tools, dashboards,
+            and communication services. By using HoxFitness.in, you agree to these Terms.
           </Text>
 
           {/* 1. Use of Service */}
           <Heading as="h2" size="md" mt={8} mb={3}>
             1. Use of the Service
           </Heading>
-          <List styleType="disc" pl={5}>
-            <ListItem>
-              HoxFitness provides tools for gym owners to manage members, payments, and communication.
-            </ListItem>
-            <ListItem>
-              You agree to use the service only for lawful gym or fitness business purposes.
-            </ListItem>
-            <ListItem>Unauthorized use, data scraping, or reverse engineering is strictly prohibited.</ListItem>
-          </List>
+          <VStack align="start" spacing={3}>
+            <List styleType="disc" pl={5}>
+              <ListItem>
+                HoxFitness provides tools for gym owners to manage members, payments, and communication.
+              </ListItem>
+              <ListItem>
+                You agree to use the service only for lawful gym or fitness business purposes.
+              </ListItem>
+              <ListItem>
+                Unauthorized use, data scraping, or reverse engineering is strictly prohibited.
+              </ListItem>
+            </List>
+          </VStack>
 
           {/* 2. Account Responsibilities */}
           <Heading as="h2" size="md" mt={8} mb={3}>
@@ -48,7 +52,7 @@ const TermsOfService: NextPage = () => {
             <ListItem>Notify us immediately if you suspect any unauthorized activity.</ListItem>
           </List>
 
-          {/* 3. Payment & Subscriptions */}
+          {/* 3. Payments & Subscriptions */}
           <Heading as="h2" size="md" mt={8} mb={3}>
             3. Payments &amp; Subscriptions
           </Heading>
@@ -63,14 +67,13 @@ const TermsOfService: NextPage = () => {
             4. Communication Consent
           </Heading>
           <Text mb={3}>
-            By using HoxFitness, you consent to receive notifications, payment reminders, and updates via:
+            By using HoxFitness, you consent to receive notifications, payment reminders, and updates
+            via:
           </Text>
           <List styleType="disc" pl={5}>
             <ListItem>WhatsApp Business Cloud API (Meta)</ListItem>
             <ListItem>Browser Push Notifications (OneSignal)</ListItem>
-            <ListItem>
-              Email alerts from <b>support@hoxfitness.in</b>
-            </ListItem>
+            <ListItem>Email alerts from <b>support@hoxfitness.in</b></ListItem>
           </List>
           <Text mt={2}>
             You may opt out of these communications at any time from your dashboard settings.
@@ -104,8 +107,8 @@ const TermsOfService: NextPage = () => {
             7. Limitation of Liability
           </Heading>
           <Text>
-            HoxFitness is provided on an &quot;as-is&quot; basis. We are not responsible for losses due
-            to system downtime, incorrect data entry, or third-party service issues.
+            HoxFitness is provided on an “as-is” basis. We are not responsible for losses due to system
+            downtime, incorrect data entry, or third-party service issues.
           </Text>
 
           {/* 8. Modifications */}
